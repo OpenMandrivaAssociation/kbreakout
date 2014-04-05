@@ -1,7 +1,7 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	4.12.3
-Release:	2
+Version:	4.12.4
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -35,6 +35,9 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %makeinstall_std -C build
 
 %changelog
+* Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.4-1
+- New version 4.12.4
+
 * Fri Mar 07 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-2
 - Requires libkdegames-corebindings
 
