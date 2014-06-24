@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	4.12.4
+Version:	4.13.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -35,6 +35,9 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %makeinstall_std -C build
 
 %changelog
+* Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.2-1
+- New version 4.13.2
+
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.4-1
 - New version 4.12.4
 
