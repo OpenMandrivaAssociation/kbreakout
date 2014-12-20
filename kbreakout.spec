@@ -1,12 +1,12 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	4.14.3
-Release:	2
+Version:	14.12.0
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kbreakout/
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 Requires:	libkdegames-corebindings
 
