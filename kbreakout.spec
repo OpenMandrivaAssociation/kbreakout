@@ -17,11 +17,12 @@ KBreakout is a Breakout-like game.
 Its object is to destroy as many bricks as possible without losing the ball.
 
 %files
-%{_kde_bindir}/kbreakout
-%{_kde_applicationsdir}/kbreakout.desktop
-%{_kde_appsdir}/kbreakout
-%{_kde_iconsdir}/hicolor/*/apps/kbreakout.png
-%{_kde_docdir}/*/*/kbreakout
+%doc %{_docdir}/*/*/kbreakout                                                                          
+%{_bindir}/kbreakout                                                                                   
+%{_datadir}/applications/org.kde.kbreakout.desktop                                                     
+%{_datadir}/kxmlgui5/kbreakout/kbreakoutui.rc                                                          
+%{_datadir}/kbreakout                                                                                  
+%{_iconsdir}/hicolor/*/apps/kbreakout.png     
 
 #------------------------------------------------------------------------------
 
