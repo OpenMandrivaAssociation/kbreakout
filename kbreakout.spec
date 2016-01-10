@@ -9,6 +9,11 @@ Url:		http://www.kde.org/applications/games/kbreakout/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(Qt5)
+BuildRequires:	cmake(KF5Config)
+
 Requires:	libkdegames-corebindings
 
 %description
