@@ -14,6 +14,7 @@ BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(Qt5)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 Requires:	libkdegames-corebindings
 
