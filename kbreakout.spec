@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -25,11 +25,10 @@ KBreakout is a Breakout-like game.
 Its object is to destroy as many bricks as possible without losing the ball.
 
 %files -f %{name}.lang
-%{_bindir}/kbreakout                                                                                   
-%{_datadir}/applications/org.kde.kbreakout.desktop                                                     
-%{_datadir}/kxmlgui5/kbreakout/kbreakoutui.rc                                                          
-%{_datadir}/kbreakout                                                                                  
-%{_iconsdir}/hicolor/*/apps/kbreakout.png     
+%{_bindir}/kbreakout
+%{_datadir}/applications/org.kde.kbreakout.desktop
+%{_datadir}/kbreakout
+%{_iconsdir}/hicolor/*/apps/kbreakout.*
 
 #------------------------------------------------------------------------------
 
