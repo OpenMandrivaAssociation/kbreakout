@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kbreakout-17.12.1.tar.xz: 523543aa904d12c7dda13efda5ac66a3d535fd34
+sources:
+  kbreakout-17.12.2.tar.xz: 58badc316f86a4b21954a24d25870026fd412375
