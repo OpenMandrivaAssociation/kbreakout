@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	 18.04.2
+Version:	18.04.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -8,16 +8,21 @@ License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kbreakout/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Qml)
+BuildRequires:	cmake(Qt5Quick)
+BuildRequires:	cmake(Qt5QuickWidgets)
 BuildRequires:	cmake(KF5CoreAddons)
-BuildRequires:	cmake(KF5KDEGames)
-BuildRequires:	cmake(Qt5)
 BuildRequires:	cmake(KF5Config)
-BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Crash)
-
-Requires:	libkdegames-corebindings
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5KDEGames)
 
 %description
 KBreakout is a Breakout-like game.
