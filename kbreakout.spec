@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	18.08.1
+Version:	18.08.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
