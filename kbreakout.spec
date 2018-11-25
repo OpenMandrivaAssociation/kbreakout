@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	18.08.3
+Version:	18.11.80
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -33,6 +33,7 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %{_bindir}/kbreakout
 %{_datadir}/applications/org.kde.kbreakout.desktop
 %{_datadir}/kbreakout
+%{_datadir}/metainfo/org.kde.kbreakout.appdata.xml
 %{_iconsdir}/hicolor/*/apps/kbreakout.*
 
 #------------------------------------------------------------------------------
