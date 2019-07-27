@@ -1,6 +1,6 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -29,7 +29,7 @@ KBreakout is a Breakout-like game.
 Its object is to destroy as many bricks as possible without losing the ball.
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/kbreakout.categories
+%{_datadir}/qlogging-categories5/kbreakout.categories
 %{_bindir}/kbreakout
 %{_datadir}/applications/org.kde.kbreakout.desktop
 %{_datadir}/kbreakout
