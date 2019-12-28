@@ -48,6 +48,3 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
-
-# FIXME gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
