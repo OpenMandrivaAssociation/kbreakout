@@ -1,12 +1,12 @@
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kbreakout/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(Qt5Qml)
@@ -48,3 +48,6 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
+
+# FIXME gdb 8.3.1 hang
+strip --strip-unneeded %{buildroot}%{_bindir}/*
