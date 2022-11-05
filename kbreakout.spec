@@ -1,7 +1,7 @@
 Summary:	Breakout like game
 Name:		kbreakout
 Version:	22.08.3
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kbreakout/
@@ -22,6 +22,8 @@ BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5KDEGames)
+
+Requires: qml(org.kde.games.core)
 
 %description
 KBreakout is a Breakout-like game.
