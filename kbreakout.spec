@@ -1,7 +1,7 @@
 Summary:	Breakout like game
 Name:		kbreakout
 Version:	23.08.4
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kbreakout/
