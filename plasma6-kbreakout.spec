@@ -7,7 +7,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-Url:		http://www.kde.org/applications/games/kbreakout/
+Url:		https://www.kde.org/applications/games/kbreakout/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/kbreakout/-/archive/%{gitbranch}/kbreakout-%{gitbranchd}.tar.bz2#/kbreakout-%{git}.tar.bz2
