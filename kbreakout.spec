@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Breakout like game
 Name:		kbreakout
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -32,6 +32,11 @@ BuildRequires:	cmake(KDEGames6)
 
 Requires: qml(org.kde.games.core)
 
+%rename plasma6-kbreakout
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KBreakout is a Breakout-like game.
 
@@ -44,18 +49,3 @@ Its object is to destroy as many bricks as possible without losing the ball.
 %{_datadir}/kbreakout
 %{_datadir}/metainfo/org.kde.kbreakout.appdata.xml
 %{_iconsdir}/hicolor/*/apps/kbreakout.*
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kbreakout-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kbreakout --with-html
